@@ -55,16 +55,14 @@ div#info-actions{
     margin-right: 20px;
 }
 
-ul
-{
+ul{
 list-style-type: none;
 padding: 0;
 margin: 0;
 text-align: right;
 }
 
-li
-{
+li{
 background-image: url(arrow.gif);
 background-repeat: no-repeat;
 background-position: 100% .4em;
@@ -81,4 +79,11 @@ padding-right: .6em;
     width: 5%;
     height: 5%;
     margin-top: 25px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
 }
