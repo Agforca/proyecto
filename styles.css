@@ -9,6 +9,26 @@
     padding: 0;
 }
 
+.mat-card#second-card{
+    background-color: lightgray;
+}
+
+.mat-card#third-card{
+    background-color: lightgray;
+}
+
+.mat-card#fourth-card{
+    background-color: lightgray;
+}
+
+.mat-card#fifth-card{
+    background-color: lightgray;
+}
+
+.mat-card#sixth-card{
+    background-color: lightgray;
+}
+
 div#profile-background{
     display: flex;    
 }
@@ -26,31 +46,29 @@ div#profile-background img{
     z-index: 1;
 }
 
-div#info-actions{
-    display: flex;
-}
-
 .logo{
-    margin: 1rem;
+    margin-top: 15px;
+    margin-left: 20px;
     width: 10%;
     height: 5%;
 }
 
 #login{
-    margin-top: 20px;
+    margin-top: 25px;
     margin-right: 20px;
+    border: 3px solid;
 }
 
 #logo-ig{
-    width: 2%;
-    height: 2%;
+    width: 3%;
+    height: 3%;
     margin-top: 25px;
     margin-right: 20px;
 }
 
 #logo-fb{
-    width: 2%;
-    height: 2%;
+    width: 3%;
+    height: 3%;
     margin-top: 25px;
     margin-right: 20px;
 }
@@ -81,9 +99,26 @@ padding-right: .6em;
     margin-top: 25px;
 }
 
-.box {
+.flex-container {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    text-align: justify;
+    align-items: stretch;
+    align-content: space-between;
+    border: 1px solid;
+}
+
+.izq {    
+    background-color: lightblue;
+    border: 1px solid;
+}
+
+
+.der {    
+    background-color: lightcoral;
+    border: 1px solid;
+}
+
+.progress{
+    height: 25px;
 }
