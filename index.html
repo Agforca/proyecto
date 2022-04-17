@@ -3,45 +3,45 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Agu Page</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <!-- Content -->
-
-  <div>
+  <div class="header">
     <img class="logo" src="logo-ARGENTINA-PROGRAMA.jpg" alt="Logo Argentina Programa">
     <a name="" id="login" class="btn btn-light float-end" href="#" role="button">Login</a>
     <a href="#"><img id="logo-ig" class="img-fluid float-end" src="logo-ig.png" alt="Logo IG"></a>
     <a href="#"><img id="logo-fb" class="img-fluid float-end" src="logo-fb.png" alt="Logo FB"></a>
   </div>
 
-
   <div class="card mat-card" id="first-card">
     <div id="profile-background"><img src="Banner.jpg" alt="Banner"></div>
     <div id="info" style="padding: 16px">
       <div id="info-img">
         <img class="profile-image" src="perfil.jpeg" alt="Perfil">
-        <div class="btn-edit"><a href="#" class="btn-right float-right"><i class="fas fa-pen"></i></a></div>
-        <div class="btn-del"><a href="#" class="btn-right float-right"><i class="fas fa-times"></i></a></div>
+        <div class="btn-edit"><a href="#" class="btn-right float-end"><i class="fas fa-pen"></i></a></div><br>
+        <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
       </div>
 
-      <div class="flex-container">
+      <div class="container">
 
-        <div class="izq">
+        <div style="float:left">
           <h1>Agustin Forchetti</h1>
-          <div id="info-profession">Ingeniero Químico</div>
+          <div id="info-profession">
+            <h4>Ingeniero Químico</h4>
+          </div>
           <div id="info-contact">
-            <p>Santa Fe (Argentina)</p>
+            <h5>Santa Fe</h5>
+            <h6>Argentina</h6><br>
             <span><a href="#">Información de contacto</a></span>
           </div>
         </div>
@@ -62,8 +62,6 @@
         </div>
       </div>
 
-
-
       <div>
         <button type="button" class="btn btn-dark">Tengo interés en</button>
         <button type="button" class="btn btn-light">Añadir sección</button>
@@ -73,71 +71,100 @@
     </div>
   </div>
 
-
   <div class="card mat-card" id="second-card">
     <div class="card-titles">
       <h2>Acerca de</h2>
-
-
-      <div>
-        <p id="text-acercade">Ingeniero Químico. Doctor en Ingeniería Química pronto...</p>
-      </div>
-      <div class="btn-edit" onclick="cambiar_parrafo()">
-        <a href="#" class="btn-right float-end">
-          <i class="fa fa-pen"></i>
-        </a>
-      </div>
-      <div class="btn-del"><a href="#" class="btn-right float-right"><i class="fas fa-times"></i></a></div>
     </div>
+
+    <div class="btn-edit" onclick="cambiar_parrafo()">
+      <a href="#" class="btn-right float-end">
+        <i class="fa fa-pen"></i>
+      </a>
+    </div>
+    <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
 
     <div>
       <input id="edit-acercade" type="text" onimput="myFunction2(this.value)" style="display:none">
     </div>
 
-  </div>
+    <div>
+      <p id="text-acercade">Ingeniero Químico. Doctor en Ingeniería Química pronto.</p>
+    </div>
 
+
+  </div>
 
   <div class="card mat-card" id="third-card">
     <div class="card-titles">
       <h2>Experiencia</h2>
     </div>
+    <div class="btn-edit" onclick="cambiar_parrafo()">
+      <a href="#" class="btn-right float-end">
+        <i class="fa fa-pen"></i>
+      </a>
+    </div>
+    <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
 
     <div>
-      <p id="text-acercade">Backend Developer</p>
-      <div class="btn-edit" onclick="cambiar_parrafo()">
-        <a href="#" class="btn-right float-end">
-          <i class="fa fa-pen"></i>
-        </a>
+      <div>
+        <div>
+          <img id=logo-intec class="img-fluid" src="logo-intec.png" alt="UNL">
+        </div>
+        <div>
+          <h4>INTEC (UNL-CONICET)</h4>
+          <h5>Becario Doctoral</h5>
+          <h6>2017-2022</h6>
+        </div>
       </div>
-      <div class="btn-del"><a href="#" class="btn-right float-right"><i class="fas fa-times"></i></a></div>
+
     </div>
 
     <div class="card-titles">
       <h2>Educación</h2>
     </div>
 
+    <div class="btn-edit" onclick="cambiar_parrafo()">
+      <a href="#" class="btn-right float-end">
+        <i class="fa fa-pen"></i>
+      </a>
+    </div>
+    <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
+
     <div>
-      <p id="text-acercade">Backend Developer</p>
-      <div class="btn-edit" onclick="cambiar_parrafo()">
-        <a href="#" class="btn-right float-end">
-          <i class="fa fa-pen"></i>
-        </a>
+      <div>
+        <img id=logo-unl-2 class="img-fluid" src="logoUnl.jpg" alt="UNL">
       </div>
-      <div class="btn-del"><a href="#" class="btn-right float-right"><i class="fas fa-times"></i></a></div>
+      <div>
+        <h4>UNL</h4>
+        <h5>Doctor en Ingeniería Química</h5>
+        <h6>2017-2022</h6>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <img id=logo-unl-2 class="img-fluid" src="logoUnl.jpg" alt="UNL">
+      </div>
+      <div>
+        <h4>UNL</h4>
+        <h5>Ingeniero Químico</h5>
+        <h6>2011-2027</h6>
+      </div>
     </div>
   </div>
-
 
   <div class="card mat-card" id="fourth-card">
     <div class="card-titles">
       <h2>Hard and Soft Skills</h2>
-      <div class="btn-edit" onclick="cambiar_parrafo()">
-        <a href="#" class="btn-right float-end">
-          <i class="fa fa-pen"></i>
-        </a>
-      </div>
-      <div class="btn-del"><a href="#" class="btn-right float-right"><i class="fas fa-times"></i></a></div>
     </div>
+
+    <div class="btn-edit" onclick="cambiar_parrafo()">
+      <a href="#" class="btn-right float-end">
+        <i class="fa fa-pen"></i>
+      </a>
+    </div>
+    <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
+
 
     <div>
 
@@ -172,39 +199,56 @@
   <div class="card mat-card" id="fifth-card">
     <div class="card-titles">
       <h2>Idiomas</h2>
-      <div class="btn-edit" onclick="cambiar_parrafo()">
-        <a href="#" class="btn-right float-end">
-          <i class="fa fa-pen"></i>
-        </a>
-      </div>
-      <div class="btn-del"><a href="#" class="btn-right float-right"><i class="fas fa-times"></i></a></div>
     </div>
+
+    <div class="btn-edit" onclick="cambiar_parrafo()">
+      <a href="#" class="btn-right float-end">
+        <i class="fa fa-pen"></i>
+      </a>
+    </div>
+    <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
 
     <div>
 
       <div class="container">
-        <h5>Idioma 1</h5>
+        <h5>Español</h5>
         <div class="progress">
-          <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" role="progressbar"
-            style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+            style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
         </div>
       </div><br><br>
 
 
       <div class="container">
-        <h5>Idioma 2</h5>
+        <h5>Inglés</h5>
         <div class="progress">
           <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" role="progressbar"
-            style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            style="width: 90%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">90%</div>
         </div>
       </div><br><br>
 
 
       <div class="container">
-        <h5>Idioma 3</h5>
+        <h5>Francés</h5>
         <div class="progress">
           <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"
-            style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+        </div>
+      </div><br><br>
+
+      <div class="container">
+        <h5>Portugués</h5>
+        <div class="progress">
+          <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar"
+            style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+        </div>
+      </div><br><br>
+
+      <div class="container">
+        <h5>Alemán</h5>
+        <div class="progress">
+          <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar"
+            style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
         </div>
       </div>
     </div>
@@ -213,16 +257,43 @@
   <div class="card mat-card" id="sixth-card">
     <div class="card-titles">
       <h2>Proyectos</h2>
-      <div class="btn-edit" onclick="cambiar_parrafo()">
-        <a href="#" class="btn-right float-end">
-          <i class="fa fa-pen"></i>
-        </a>
-      </div>
-      <div class="btn-del"><a href="#" class="btn-right float-right"><i class="fas fa-times"></i></a></div>
     </div>
+
+    <div class="btn-edit" onclick="cambiar_parrafo()">
+      <a href="#" class="btn-right float-end">
+        <i class="fa fa-pen"></i>
+      </a>
+    </div>
+    <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
+
     <div>
-      <p id="text-acercade">Lista de proyectos</p>
+      <div>
+        <div>
+          <img id=logo-arg-programa-2 class="img-fluid" src="logo-ARGENTINA-PROGRAMA.jpg" alt="UNL">
+        </div>
+        <div style="float:left">
+          <h4>Portfolio Web Argentina Programa</h4>
+          <h5>2022</h5>
+          <p>Desarrollo de Portfolio Web Personal en el marco del Programa #YoProgramo</p>
+          <a href="https://agforca.github.io/proyecto/">Link al Proyecto</a>
+        </div>
+      </div>
     </div>
+
+    <div>
+      <div>
+        <div>
+          <img id=logo-rg class="img-fluid" src="logo-rg.png" alt="UNL">
+        </div>
+        <div style="float:left">
+          <h4>Desarrollo de Resinas Termoestables Biobasadas</h4>
+          <h5>2027-2022</h5>
+          <p>Síntesis y Caracterización de nuevas resinas termoestables biobasadas</p>
+          <a href="https://www.researchgate.net/profile/Agustin-Forchetti-Casarino-2">Link a ResearchGate</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 

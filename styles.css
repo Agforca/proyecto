@@ -9,7 +9,7 @@
     padding: 0;
 }
 
-.mat-card#second-card{
+/*.mat-card#second-card{
     background-color: lightgray;
 }
 
@@ -27,7 +27,7 @@
 
 .mat-card#sixth-card{
     background-color: lightgray;
-}
+}*/
 
 div#profile-background{
     display: flex;    
@@ -99,24 +99,41 @@ padding-right: .6em;
     margin-top: 25px;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: space-between;
-    border: 1px solid;
+#logo-unl-2{
+    width: 8%;
+    height: 8%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    float: left;
 }
 
-.izq {    
-    background-color: lightblue;
-    border: 1px solid;
+#logo-intec{
+    width: 8%;
+    height: 8%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    float: left;
 }
 
+#logo-arg-programa-2{
+    width: 8%;
+    height: 8%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    float: left;
+}
 
-.der {    
-    background-color: lightcoral;
-    border: 1px solid;
+#logo-rg{
+    width: 5%;
+    height: 5%;
+    margin-left: 20px;
+    margin-right: 55px;
+    margin-bottom: 15px;
+    float: left;
 }
 
 .progress{
