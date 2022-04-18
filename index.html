@@ -26,11 +26,18 @@
   <div class="card mat-card" id="first-card">
     <div id="profile-background"><img src="Banner.jpg" class="img-fluid" alt="Banner"></div>
     <div id="info" style="padding: 16px">
-      <div id="info-img">
-        <img class="profile-image" src="perfil.jpeg" alt="Perfil">
-        <div class="btn-edit"><a href="#" class="btn-right float-end"><i class="fas fa-pen"></i></a></div><br>
-        <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
+      <div class="row">
+        <div class="col">
+          <div>
+            <img class="profile-image" src="perfil.jpeg" alt="Perfil">
+          </div>
+        </div>
+        <div class="col">
+          <div class="btn-edit"><a href="#" class="btn-right float-end"><i class="fas fa-pen"></i></a></div><br>
+          <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>  
+        </div>
       </div>
+      
 
       <div class="container-fluid">
 
@@ -72,38 +79,47 @@
   </div>
 
   <div class="card mat-card" id="second-card">
-    <div class="card-titles">
-      <h2>Acerca de</h2>
-    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card-titles">
+          <h2>Acerca de</h2>
+        </div>
+      </div>
+      <div class="col">
+        <div class="btn-edit" onclick="cambiar_parrafo()">
+          <a href="#" class="btn-right float-end">
+            <i class="fa fa-pen"></i>
+          </a>
+        </div><br>
+        <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
 
-    <div class="btn-edit" onclick="cambiar_parrafo()">
-      <a href="#" class="btn-right float-end">
-        <i class="fa fa-pen"></i>
-      </a>
+        <div>
+          <input id="edit-acercade" type="text" onimput="myFunction2(this.value)" style="display:none">
+        </div>
+      </div>
     </div>
-    <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
-
-    <div>
-      <input id="edit-acercade" type="text" onimput="myFunction2(this.value)" style="display:none">
-    </div>
-
     <div>
       <p id="text-acercade">Ingeniero Químico. Doctor en Ingeniería Química pronto.</p>
     </div>
 
-
   </div>
 
   <div class="card mat-card" id="third-card">
-    <div class="card-titles">
-      <h2>Experiencia</h2>
+    <div class="row">
+      <div class="col">
+        <div class="card-titles">
+          <h2>Experiencia</h2>
+        </div>
+      </div>
+      <div class="col">
+        <div class="btn-edit" onclick="cambiar_parrafo()">
+          <a href="#" class="btn-right float-end">
+            <i class="fa fa-pen"></i>
+          </a>
+        </div><br>
+        <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
+      </div>
     </div>
-    <div class="btn-edit" onclick="cambiar_parrafo()">
-      <a href="#" class="btn-right float-end">
-        <i class="fa fa-pen"></i>
-      </a>
-    </div>
-    <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
 
     <div>
       <div>
@@ -116,19 +132,25 @@
           <h6>2017-2022</h6>
         </div>
       </div>
-
     </div>
 
-    <div class="card-titles">
-      <h2>Educación</h2>
-    </div>
+    <br><br>
 
-    <div class="btn-edit" onclick="cambiar_parrafo()">
-      <a href="#" class="btn-right float-end">
-        <i class="fa fa-pen"></i>
-      </a>
+    <div class="row">
+      <div class="col">
+        <div class="card-titles">
+          <h2>Educación</h2>
+        </div>
+      </div>
+      <div class="col">
+        <div class="btn-edit" onclick="cambiar_parrafo()">
+          <a href="#" class="btn-right float-end">
+            <i class="fa fa-pen"></i>
+          </a>
+        </div><br>
+        <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
+      </div>
     </div>
-    <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
 
     <div>
       <div>
@@ -154,17 +176,21 @@
   </div>
 
   <div class="card mat-card" id="fourth-card">
-    <div class="card-titles">
-      <h2>Hard and Soft Skills</h2>
+    <div class="row">
+      <div class="col">
+        <div class="card-titles">
+          <h2>Hard and Soft Skills</h2>
+        </div>
+      </div>
+      <div class="col">
+        <div class="btn-edit" onclick="cambiar_parrafo()">
+          <a href="#" class="btn-right float-end">
+            <i class="fa fa-pen"></i>
+          </a>
+        </div><br>
+        <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
+      </div>
     </div>
-
-    <div class="btn-edit" onclick="cambiar_parrafo()">
-      <a href="#" class="btn-right float-end">
-        <i class="fa fa-pen"></i>
-      </a>
-    </div>
-    <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
-
 
     <div>
 
@@ -197,16 +223,21 @@
   </div>
 
   <div class="card mat-card" id="fifth-card">
-    <div class="card-titles">
-      <h2>Idiomas</h2>
+    <div class="row">
+      <div class="col">
+        <div class="card-titles">
+          <h2>Idiomas</h2>
+        </div>
+      </div>
+      <div class="col">
+        <div class="btn-edit" onclick="cambiar_parrafo()">
+          <a href="#" class="btn-right float-end">
+            <i class="fa fa-pen"></i>
+          </a>
+        </div><br>
+        <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
+      </div>
     </div>
-
-    <div class="btn-edit" onclick="cambiar_parrafo()">
-      <a href="#" class="btn-right float-end">
-        <i class="fa fa-pen"></i>
-      </a>
-    </div>
-    <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
 
     <div>
 
@@ -255,16 +286,21 @@
   </div>
 
   <div class="card mat-card" id="sixth-card">
-    <div class="card-titles">
-      <h2>Proyectos</h2>
+    <div class="row">
+      <div class="col">
+        <div class="card-titles">
+          <h2>Proyectos</h2>
+        </div>
+      </div>
+      <div class="col">
+        <div class="btn-edit" onclick="cambiar_parrafo()">
+          <a href="#" class="btn-right float-end">
+            <i class="fa fa-pen"></i>
+          </a>
+        </div><br>
+        <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
+      </div>
     </div>
-
-    <div class="btn-edit" onclick="cambiar_parrafo()">
-      <a href="#" class="btn-right float-end">
-        <i class="fa fa-pen"></i>
-      </a>
-    </div>
-    <div class="btn-del"><a href="#" class="btn-right float-end"><i class="fas fa-times"></i></a></div>
 
     <div>
       <div>
@@ -295,7 +331,6 @@
     </div>
 
   </div>
-
 
 
   <script src="https://kit.fontawesome.com/cedfb124d3.js" crossorigin="anonymous"></script>
