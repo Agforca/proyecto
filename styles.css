@@ -42,6 +42,7 @@ div#profile-background img{
     border-radius: 50%;
     margin-top: -110px;
     z-index: 1;
+    width: 15%;
 }
 
 .logo-arg-prog{
