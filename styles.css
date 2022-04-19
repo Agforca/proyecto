@@ -91,6 +91,7 @@ padding-right: .6em;
 }
 
 #logo-unl-2{
+    margin-top: 25px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 15px;
@@ -131,6 +132,7 @@ padding-right: .6em;
     height: 40px;
     transform: translateY(-80px) translateX(-50%) 
     rotate(45deg);
+
 }
 
 .scrolldown span{
